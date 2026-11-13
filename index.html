@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Read the working paper and supplementary information for Debiased Counterfactual Estimation for Nonlinear Panel Factor Models by Shunyu Hao.">
+  <meta name="citation_title" content="Debiased Counterfactual Estimation for Nonlinear Panel Factor Models: A Generative Deep Learning Approach">
+  <meta name="citation_author" content="Hao, Shunyu">
+  <meta name="citation_publication_date" content="2026/11/05">
+  <meta name="citation_pdf_url" content="https://shunyu1001.github.io/gsc-gan-paper/Hao_Debiased_Counterfactual_Estimation.pdf">
+  <title>Debiased Counterfactual Estimation · Shunyu Hao</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f9f7f2;
+      --ink: #202921;
+      --muted: #526257;
+      --accent: #225743;
+      --border: #d9dfd5;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 1rem/1.65 Inter, system-ui, -apple-system, sans-serif;
+    }
+    main {
+      max-width: 48rem;
+      padding: clamp(3rem, 10vw, 7rem) 0 4rem;
+      margin: 0 auto;
+      width: min(100% - 3rem, 48rem);
+    }
+    header { border-top: 3px solid var(--accent); padding-top: 1.75rem; }
+    .author { margin: 0 0 .75rem; color: var(--accent); font-weight: 650; }
+    h1, h2, .subtitle { font-family: Georgia, 'Times New Roman', serif; }
+    h1 {
+      font-size: clamp(2rem, 5.6vw, 3.65rem);
+      line-height: 1.08;
+      letter-spacing: -.035em;
+      margin: 0;
+      font-weight: 500;
+      text-wrap: balance;
+    }
+    .subtitle {
+      font-size: clamp(1.15rem, 3vw, 1.65rem);
+      font-style: italic;
+      margin: .8rem 0 .4rem;
+    }
+    .date { margin: .5rem 0 1.45rem; color: var(--muted); }
+    .files { display: flex; flex-wrap: wrap; gap: .65rem; }
+    .files a {
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      border-radius: .25rem;
+      padding: .55rem .95rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .files a:first-child { background: var(--accent); color: white; }
+    .files a:hover { text-decoration: underline; text-underline-offset: .15em; }
+    .files a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    section { border-top: 1px solid var(--border); margin-top: 2.15rem; padding-top: 1.35rem; }
+    h2 { font-size: 1.5rem; line-height: 1.25; margin: 0 0 .6rem; font-weight: 600; }
+    section p { margin: 0; max-width: 68ch; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="author">Shunyu Hao</p>
+      <h1>Debiased Counterfactual Estimation for Nonlinear Panel Factor Models</h1>
+      <p class="subtitle">A Generative Deep Learning Approach</p>
+      <p class="date">Working paper · <time datetime="2026-11-05">November 5, 2026</time></p>
+      <nav class="files" aria-label="Paper files">
+        <a href="Hao_Debiased_Counterfactual_Estimation.pdf">Main paper (PDF)</a>
+        <a href="Hao_Debiased_Counterfactual_Estimation_SI.pdf">Supplementary information (PDF)</a>
+      </nav>
+    </header>
+    <section aria-labelledby="abstract">
+      <h2 id="abstract">Abstract</h2>
+      <p>Panel methods such as generalized synthetic control use a linear factor model both to adjust for unobserved differences and to predict untreated outcomes. Predictions can fail when units respond nonlinearly to common conditions, even if the factors are estimated well. We keep factor-based adjustment and use generative adversarial networks for flexible prediction. For average effects on treated units, weighted control residuals correct prediction errors. For quantile effects, a separate regression and residual generator estimate the distribution of untreated outcomes. We establish identification and consistency and develop a framework for bootstrap inference. In simulations, the average-effect estimator is more accurate than augmented synthetic control, difference-in-differences, and synthetic difference-in-differences. When the covariate distribution shifts, its root mean squared error is 78 percent below generalized synthetic control’s. The distributional estimator recovers quantile effects more accurately overall than group-level distributional methods. An application to political connections during the 2008 financial crisis finds that connected firms’ returns exceed their estimated counterfactual most in the lower part of the distribution.</p>
+    </section>
+  </main>
+</body>
+</html>
